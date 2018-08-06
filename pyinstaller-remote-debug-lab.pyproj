@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0b3ccccb-52b8-4127-9c82-b2402be223c2}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>main.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>CondaEnv|CondaEnv|pyinstaller-remote-debugging</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="build\main\warnmain.txt" />
+    <Content Include="build\main\xref-main.html" />
+    <Content Include="build\main_debug\warnmain_debug.txt" />
+    <Content Include="build\main_debug\xref-main_debug.html" />
+    <Content Include="build\main_debug_pydevd\warnmain_debug_pydevd.txt" />
+    <Content Include="build\main_debug_pydevd\xref-main_debug_pydevd.html" />
+    <Content Include="dist\main_debug_pydevd\tk\images\logo100.gif" />
+    <Content Include="dist\main_debug_pydevd\tk\images\logo64.gif" />
+    <Content Include="dist\main_debug_pydevd\tk\images\logoLarge.gif" />
+    <Content Include="dist\main_debug_pydevd\tk\images\logoMed.gif" />
+    <Content Include="dist\main_debug_pydevd\tk\images\pwrdLogo100.gif" />
+    <Content Include="dist\main_debug_pydevd\tk\images\pwrdLogo150.gif" />
+    <Content Include="dist\main_debug_pydevd\tk\images\pwrdLogo175.gif" />
+    <Content Include="dist\main_debug_pydevd\tk\images\pwrdLogo200.gif" />
+    <Content Include="dist\main_debug_pydevd\tk\images\pwrdLogo75.gif" />
+    <Content Include="dist\main_debug_pydevd\tk\images\tai-ku.gif" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="counterup\__init__.py" />
+    <Compile Include="main.py" />
+    <Compile Include="main_debug.py" />
+    <Compile Include="main_debug_pydevd.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="build\" />
+    <Folder Include="build\main" />
+    <Folder Include="build\main_debug" />
+    <Folder Include="build\main_debug_pydevd" />
+    <Folder Include="counterup" />
+    <Folder Include="dist\" />
+    <Folder Include="dist\main_debug_pydevd\" />
+    <Folder Include="dist\main_debug_pydevd\tk\" />
+    <Folder Include="dist\main_debug_pydevd\tk\images" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|pyinstaller-remote-debugging" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
