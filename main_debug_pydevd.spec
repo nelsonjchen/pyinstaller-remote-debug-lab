@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['main_debug_pydevd.py'],
-             pathex=['C:\\Users\\User\\Documents\\pyinstaller-remote-debug-lab'],
+             pathex=['pyinstaller-remote-debug-lab'],
              binaries=[],
              datas=[],
              hiddenimports=[],
