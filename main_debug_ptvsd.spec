@@ -3,8 +3,8 @@
 block_cipher = None
 
 
-a = Analysis(['main_debug.py'],
-             pathex=['C:\\Users\\User\\Documents\\pyinstaller-remote-debug-lab'],
+a = Analysis(['main_debug_ptvsd.py'],
+             pathex=['C:\\Users\\Nelson\\Documents\\pyinstaller-remote-debug-lab'],
              binaries=[],
              datas=[],
              hiddenimports=[],
@@ -19,7 +19,7 @@ pyz = PYZ(a.pure, a.zipped_data,
 exe = EXE(pyz,
           a.scripts,
           exclude_binaries=True,
-          name='main_debug',
+          name='main_debug_ptvsd',
           debug=False,
           strip=False,
           upx=True,
@@ -30,4 +30,4 @@ coll = COLLECT(exe,
                a.datas,
                strip=False,
                upx=True,
-               name='main_debug')
+               name='main_debug_ptvsd')
