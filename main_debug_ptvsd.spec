@@ -1,13 +1,15 @@
 # -*- mode: python -*-
 
-block_cipher = None
+from PyInstaller.utils.hooks import collect_data_files
 
+block_cipher = None
+ptvsd_data_files = collect_data_files('ptvsd', True)
 
 a = Analysis(['main_debug_ptvsd.py'],
              pathex=['C:\\Users\\Nelson\\Documents\\pyinstaller-remote-debug-lab'],
              binaries=[],
-             datas=[],
-             hiddenimports=[],
+             datas=ptvsd_data_files,
+             hiddenimports=[''],
              hookspath=[],
              runtime_hooks=[],
              excludes=[],

@@ -36,6 +36,8 @@
     <Content Include="dist\main_debug_pydevd\tk\images\pwrdLogo200.gif" />
     <Content Include="dist\main_debug_pydevd\tk\images\pwrdLogo75.gif" />
     <Content Include="dist\main_debug_pydevd\tk\images\tai-ku.gif" />
+    <Content Include="main_debug_ptvsd.spec" />
+    <Content Include="main_debug_pydevd.spec" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
